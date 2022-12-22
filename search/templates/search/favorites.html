@@ -1,0 +1,69 @@
+{% extends 'base.html' %} {% block content %} {% load static %}
+
+<!-- Favorites -->
+<header class="products">
+  <div class="container h-100">
+    <div
+      class="row h-100 align-items-center justify-content-center text-center"
+    >
+      <div class="col-lg-10 align-self-end">
+        <h2 class="text-white font-weight-bold">Mes aliments</h2>
+      </div>
+    </div>
+  </div>
+</header>
+<section class="page-section bg-light" id="products">
+  <div class="container">
+    <div class="row">
+      {% if favorites %}
+      <div class="col-12">
+        <h3 class="text-center">
+          Voici les substituts que vous avez enregistré :
+        </h3>
+      </div>
+      {% for favorite in favorites %}
+      <div class="col-lg-4 col-md-12">
+        <div class="card mx-1 my-3 shadow p-3 mb-5 bg-white rounded">
+          <img
+            class="card-img-top"
+            src="{{ favorite.substitute.image_url }}"
+            alt="image du substitut"
+          />
+
+          <span class="card-score-{{ favorite.substitute.nutriscore }}"
+            >{{ favorite.substitute.nutriscore }}</span
+          >
+
+          <div class="card-body text-center">
+            <a
+              href="{% url 'search:product' favorite.substitute.id %}"
+              target="_blank"
+            >
+              <p class="card-title">{{ favorite.substitute.name }}</p>
+            </a>
+            <p>est un substitut pour</p>
+            <a
+              href="{% url 'search:product' favorite.product.id %}"
+              target="_blank"
+            >
+              <p class="card-title">{{ favorite.product.name }}</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      {% endfor %} {% else %}
+      <div class="text-center col-12">
+        Vous n'avez pas encore enregistré des substituts en favoris. Une
+        recherche en tête ?
+        <div class="p-3">
+          <a href="{% url 'search:home' %}" class="btn btn-primary"
+            >C'est par ici.</a
+          >
+        </div>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% endblock content %}
