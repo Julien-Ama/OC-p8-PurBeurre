@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0709fb8-602e-4f8c-98a1-4ed13d61ad28" name="Changes" comment="" />
+    <list default="true" id="c0709fb8-602e-4f8c-98a1-4ed13d61ad28" name="Changes" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/tests/users/functionnal_tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/users/functionnal_tests/test_authentication.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/users/test_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/users/test_models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/users/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/users/test_views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -22,15 +37,33 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../p8Pur" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../p8PurBeurre-final" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Amadeus\OneDrive\Bureau\p8PurBeurre-main\tests\users\functionnal_tests" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\cyril\Desktop\p8PurBeurre-main\users\templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_api.TestApi.test_get_products">
-    <configuration name="Python tests for test_api.TestApi.test_avoid_empty" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests for test_authentication.SeleniumRegisterTest">
+    <configuration name="Python tests for test_authentication.SeleniumRegisterTest" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="p8PurBeurre-main" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/users/functionnal_tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_authentication.SeleniumRegisterTest&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_models.ModelsTestCase.test_category_str" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="p8PurBeurre-main" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -40,25 +73,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_api.TestApi.test_avoid_empty&quot;" />
+      <option name="_new_target" value="&quot;test_models.ModelsTestCase.test_category_str&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_api.TestApi.test_get_products" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="p8PurBeurre-main" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/search" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_api.TestApi.test_get_products&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_models.ModelsTestCase (1)" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_models.ModelsTestCase.test_superuser_is_admin" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="p8PurBeurre-main" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -68,25 +87,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_models.ModelsTestCase&quot;" />
+      <option name="_new_target" value="&quot;test_models.ModelsTestCase.test_superuser_is_admin&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_models.ModelsTestCase.test_product_str" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="p8PurBeurre-main" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/search" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_models.ModelsTestCase.test_product_str&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_models.ModelsTestCase.test_user_str" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_views.TestUsersViews" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="p8PurBeurre-main" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -96,17 +101,31 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_models.ModelsTestCase.test_user_str&quot;" />
+      <option name="_new_target" value="&quot;test_views.TestUsersViews&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_views.TestViews.test_save_substitute_as_favorite_success" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="p8PurBeurre-main" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/search" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_views.TestViews.test_save_substitute_as_favorite_success&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_api.TestApi.test_get_products" />
-        <item itemvalue="Python tests.Python tests for test_api.TestApi.test_avoid_empty" />
-        <item itemvalue="Python tests.Python tests for test_models.ModelsTestCase.test_product_str" />
-        <item itemvalue="Python tests.Python tests for test_models.ModelsTestCase.test_user_str" />
-        <item itemvalue="Python tests.Python tests for test_models.ModelsTestCase (1)" />
+        <item itemvalue="Python tests.Python tests for test_authentication.SeleniumRegisterTest" />
+        <item itemvalue="Python tests.Python tests for test_views.TestViews.test_save_substitute_as_favorite_success" />
+        <item itemvalue="Python tests.Python tests for test_views.TestUsersViews" />
+        <item itemvalue="Python tests.Python tests for test_models.ModelsTestCase.test_superuser_is_admin" />
+        <item itemvalue="Python tests.Python tests for test_models.ModelsTestCase.test_category_str" />
       </list>
     </recent_temporary>
   </component>
@@ -122,6 +141,14 @@
       <workItem from="1668009924406" duration="2769000" />
       <workItem from="1669390403300" duration="4743000" />
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1671722354984</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1671722354984</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,5 +164,10 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
 </project>
