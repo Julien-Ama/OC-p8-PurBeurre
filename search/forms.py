@@ -1,5 +1,6 @@
 from django import forms
 
+
 class MainSearchForm(forms.Form):
     """"""
     product_search = forms.CharField(
@@ -8,9 +9,9 @@ class MainSearchForm(forms.Form):
         widget=forms.TextInput(
             attrs={
                 "placeholder": "Entrez un produit",
-                "type" : "text",
-                "class" : "form-control",
-                "autofocus" : "autofocus"
+                "type": "text",
+                "class": "form-control",
+                "autofocus": "autofocus"
             }
         )
     )

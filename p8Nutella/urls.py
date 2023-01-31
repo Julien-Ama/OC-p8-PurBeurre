@@ -18,7 +18,7 @@ from django.urls import path, include
 from django.contrib.auth import views as auth_views
 from users import views as users_views
 
-from . import views
+# from . import views
 
 
 urlpatterns = [
@@ -29,8 +29,9 @@ urlpatterns = [
     path("register/", users_views.register, name="register"),
     path("account", users_views.account, name="account"),
 
-    #Django Views
-    path("login/",  auth_views.LoginView.as_view(template_name="login.html") ,name="login"),
-    path("logout/",  auth_views.LogoutView.as_view(template_name="logout.html") ,name="logout"),
+    # Django Views
+    path("login/",  auth_views.LoginView.as_view
+         (template_name="login.html"), name="login"),
+    path("logout/",  auth_views.LogoutView.as_view
+         (template_name="logout.html"), name="logout"),
 ]
-

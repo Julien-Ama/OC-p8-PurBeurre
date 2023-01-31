@@ -1,7 +1,6 @@
 from django.db import models
-
-
 from users.models import User
+
 
 class Category(models.Model):
     """Represents the category table"""
@@ -56,5 +55,6 @@ class Favorite(models.Model):
 
     def __str__(self):
         return (
-            f"Produit: {self.product}, Substitut: {self.substitute}, User: {self.user}"
+            f"Produit: {self.product}, Substitut: {self.substitute},"
+            f" User: {self.user}"
         )

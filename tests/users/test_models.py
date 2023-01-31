@@ -1,6 +1,6 @@
 from django.test import TestCase
 
-from users.models import UserManager, User
+from users.models import User
 
 
 class ModelsTestCase(TestCase):

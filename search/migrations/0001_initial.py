@@ -4,6 +4,7 @@ from django.conf import settings
 from django.db import migrations, models
 import django.db.models.deletion
 
+
 def get_conversion_function(collation, character_set='utf8mb4'):
     """
     Returns a function that sets the given *collation* and *character_set*.
@@ -21,7 +22,8 @@ def get_conversion_function(collation, character_set='utf8mb4'):
             # set for database
             print('Altering database…')
             cursor.execute(
-                f'ALTER DATABASE CHARACTER SET {character_set} COLLATE {collation};'
+                f'ALTER DATABASE CHARACTER SET'
+                f' {character_set} COLLATE {collation};'
             )
             # set for tables (and convert data)
             cursor.execute(
@@ -36,6 +38,7 @@ def get_conversion_function(collation, character_set='utf8mb4'):
 
     return alter_collation_from_migration
 
+
 class Migration(migrations.Migration):
 
     initial = True
@@ -48,14 +51,18 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Category',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.BigAutoField(
+                    auto_created=True, primary_key=True,
+                    serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=150, unique=True)),
             ],
         ),
         migrations.CreateModel(
             name='Product',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.BigAutoField(
+                    auto_created=True, primary_key=True,
+                    serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=150, unique=True)),
                 ('brands', models.CharField(max_length=150)),
                 ('barcode', models.CharField(max_length=13, unique=True)),
@@ -74,10 +81,18 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Favorite',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='favorite_product', to='search.product')),
-                ('substitute', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='favorite_substitute', to='search.product')),
-                ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='favorite_user', to=settings.AUTH_USER_MODEL)),
+                ('id', models.BigAutoField(
+                    auto_created=True, primary_key=True, serialize=False,
+                    verbose_name='ID')),
+                ('product', models.ForeignKey(
+                    on_delete=django.db.models.deletion.CASCADE,
+                    related_name='favorite_product', to='search.product')),
+                ('substitute', models.ForeignKey(
+                    on_delete=django.db.models.deletion.CASCADE,
+                    related_name='favorite_substitute', to='search.product')),
+                ('user', models.ForeignKey(
+                    on_delete=django.db.models.deletion.CASCADE,
+                    related_name='favorite_user', to=settings.AUTH_USER_MODEL)),
             ],
         ),
         migrations.RunPython(get_conversion_function('utf8mb4_bin'))

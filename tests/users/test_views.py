@@ -4,6 +4,7 @@ from django.urls import reverse
 from users.models import User
 # from users.views import *
 
+
 class TestUsersViews(TestCase):
     def setUp(self):
         self.client = Client()
@@ -18,15 +19,14 @@ class TestUsersViews(TestCase):
 
     def test_registration_success(self):
         form = {
-            "email" : "user1@gmail.com",
+            "email": "user1@gmail.com",
             "username": "user1",
-            "password1" : "pass246",
-            "password2" : "pass246"
+            "password1": "pass246",
+            "password2": "pass246"
         }
         self.client.post(self.register_url, form)
         self.assertEqual(User.objects.count(), 1)
         self.client.force_login(self.user)
-
 
     def test_account_page(self):
         self.client.force_login(self.user)

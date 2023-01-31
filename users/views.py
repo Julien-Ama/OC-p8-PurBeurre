@@ -7,6 +7,7 @@ from .forms import UserRegisterForm
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 
+
 def register(request):
     """Displays the registration page"""
     if request.method == "POST":

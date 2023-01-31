@@ -1,4 +1,3 @@
-from django.contrib.auth.decorators import login_required
 from django.db.models import Count
 from django.shortcuts import render, redirect
 # from django.db.models import Count
@@ -19,24 +18,28 @@ def home(request):
     }
     return render(request, "search/home.html", context)
 
+
 def legal_notice(request):
     """Displays the legal notice page with infos"""
     return render(request, "search/legal_notice.html")
+
 
 def products(request):
     if request.method == "POST":
         product_search = request.POST['product_search']
 
-        all_product = Product.objects.all().filter(name__contains=product_search.strip().lower().capitalize())[:6]
+        all_product = Product.objects.all().filter(
+            name__contains=product_search.strip().lower().capitalize())[:6]
         context = {
-            "title" : product_search,
-            "products" : all_product
+            "title": product_search,
+            "products": all_product
         }
         return render(request, "search/products.html", context)
 
+
 def product(request, product_id):
     product = Product.objects.get(pk=product_id)
-    context = {"product" : product}
+    context = {"product": product}
     return render(request, "search/product.html", context)
 
 
@@ -61,6 +64,7 @@ def substitutes(request, product_id):
 
     return render(request, "search/substitutes.html", context)
 
+
 @login_required
 def save_favorite(request, product_id, substitute_id):
     """Saves the substitute and product searched as favorite
@@ -76,6 +80,7 @@ def save_favorite(request, product_id, substitute_id):
         return redirect("search:favorites")
     except IntegrityError:
         return redirect("search:home")
+
 
 @login_required
 def favorites(request):
