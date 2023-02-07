@@ -1,1 +1,1 @@
-web: vendor/bin/heroku-php-apache2 public/
+web: gunicorn p8Nutella.wsgi --log-file -
