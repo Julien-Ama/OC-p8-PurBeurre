@@ -18,7 +18,7 @@ from django.urls import path, include
 from django.contrib.auth import views as auth_views
 from users import views as users_views
 from django.views.static import serve
-import settings
+from p8Nutella import settings
 # from . import views
 
 
