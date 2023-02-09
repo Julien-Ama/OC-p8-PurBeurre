@@ -1,1 +1,1 @@
-web: gunicorn p8Nutella.wsgi --log-file -
+web: gunicorn p8Nutella.wsgi:application
