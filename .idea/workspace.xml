@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0709fb8-602e-4f8c-98a1-4ed13d61ad28" name="Changes" comment="first commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/p8Nutella/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/p8Nutella/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +59,7 @@
       <recent name="C:\Users\cyril\Desktop\p8PurBeurre-main\users\templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_authentication.SeleniumRegisterTest">
+  <component name="RunManager" selected="Python tests.Python tests for test_models.ModelsTestCase.test_favorite_str">
     <configuration name="Python tests for test_authentication.SeleniumRegisterTest" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="p8PurBeurre-main" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -87,17 +88,17 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_models.ModelsTestCase.test_superuser_is_admin" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_models.ModelsTestCase.test_favorite_str" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="p8PurBeurre-main" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/users" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/search" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_models.ModelsTestCase.test_superuser_is_admin&quot;" />
+      <option name="_new_target" value="&quot;test_models.ModelsTestCase.test_favorite_str&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -131,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_models.ModelsTestCase.test_favorite_str" />
         <item itemvalue="Python tests.Python tests for test_authentication.SeleniumRegisterTest" />
         <item itemvalue="Python tests.Python tests for test_authentication.SeleniumRegisterTest.test_register" />
         <item itemvalue="Python tests.Python tests for test_views.TestViews.test_save_substitute_as_favorite_success" />
         <item itemvalue="Python tests.Python tests for test_views.TestUsersViews" />
-        <item itemvalue="Python tests.Python tests for test_models.ModelsTestCase.test_superuser_is_admin" />
       </list>
     </recent_temporary>
   </component>
