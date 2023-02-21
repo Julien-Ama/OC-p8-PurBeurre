@@ -46,7 +46,7 @@ class Command(BaseCommand):
                 image_url = product.get("image_url")
                 image_small_url = product.get("image_small_url")
                 nutriscore = product.get("nutriscore_grade")[0].upper()
-                categories = categories = [
+                categories = [
                     name.strip().lower().capitalize()
                     for name in product["categories"].split(",")
                 ]
