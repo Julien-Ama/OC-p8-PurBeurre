@@ -76,30 +76,30 @@ WSGI_APPLICATION = 'p8Nutella.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',  # a changer en postgres
-        'NAME': 'projet_8',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
-        'OPTIONS': {
-            'charset': 'utf8mb4'
-        },
-    }
-}
-
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql',  # a changer en postgres
-#         'NAME': 'deqhi2nfo6skf1',
-#         'USER': 'fltlnkggksuuoq',
-#         'PASSWORD': 'fbc9c0628dcf500b3cccd8200f4ed6ab254da8094c306e78b1263f6632cdf7b4',
-#         'HOST': 'ec2-34-247-72-29.eu-west-1.compute.amazonaws.com',
-#         'PORT': '5432'
+#         'NAME': 'projet_8',
+#         'USER': 'root',
+#         'PASSWORD': '',
+#         'HOST': '127.0.0.1',
+#         'PORT': '3306',
+#         'OPTIONS': {
+#             'charset': 'utf8mb4'
+#         },
 #     }
 # }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',  # a changer en postgres
+        'NAME': 'deqhi2nfo6skf1',
+        'USER': 'fltlnkggksuuoq',
+        'PASSWORD': 'fbc9c0628dcf500b3cccd8200f4ed6ab254da8094c306e78b1263f6632cdf7b4',
+        'HOST': 'ec2-34-247-72-29.eu-west-1.compute.amazonaws.com',
+        'PORT': '5432'
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
