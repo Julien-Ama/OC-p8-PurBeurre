@@ -95,5 +95,5 @@ class Migration(migrations.Migration):
                     related_name='favorite_user', to=settings.AUTH_USER_MODEL)),
             ],
         ),
-        migrations.RunPython(get_conversion_function('utf8mb4_bin'))
+        # migrations.RunPython(get_conversion_function('utf8mb4_bin'))
     ]
