@@ -23,6 +23,7 @@ class Command(BaseCommand):
         products = myapi.avoid_empty()
 
         if products is not None:
+            print("bbbbbbbbbb")
             self.stdout.write(
                 self.style.SUCCESS("DONE")
             )
@@ -31,7 +32,7 @@ class Command(BaseCommand):
                 self.style.ERROR("ERROR")
             )
             return
-
+        print("aaaaaaaaaaaaaa")
         with ShadyBar(
             "Inserting to database : ",
             max=len(products), suffix="%(percent)d%%"
