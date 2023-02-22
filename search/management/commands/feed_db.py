@@ -37,6 +37,7 @@ class Command(BaseCommand):
             max=len(products), suffix="%(percent)d%%"
         ) as bar:
             for product in products:
+                print("1111111")
                 name = product.get(
                     "product_name_fr"
                     )[:150].strip().lower().capitalize()
