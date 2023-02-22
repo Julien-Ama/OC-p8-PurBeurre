@@ -51,7 +51,7 @@ class Command(BaseCommand):
                     name.strip().lower().capitalize()
                     for name in product["categories"].split(",")
                 ]
-
+                print("222222222")
                 # Get some of the nutriments keys/values
                 nutriments_list = [
                     "energy_100g",
@@ -60,17 +60,18 @@ class Command(BaseCommand):
                     "fat_100g",
                     "salt_100g",
                 ]
-
+                print("33333333")
                 nutriments_dict = {}
 
                 for nutriment in nutriments_list:
+                    print("44444444444")
                     nutriment_value = product.get("nutriments").get(nutriment)
                     if isinstance(nutriment_value, float) is True:
                         value = nutriment_value
                     else:
                         value = 0
                     nutriments_dict[nutriment] = value
-
+                print("55555555555")
                 product_obj = Product(
                     name=name,
                     brands=brands,
@@ -88,6 +89,7 @@ class Command(BaseCommand):
 
                 try:
                     product_obj.save()
+                    print("666666666666")
 
                     # Save categories, linking them to Product obj
                     saved_categories = []
@@ -100,18 +102,19 @@ class Command(BaseCommand):
                                 cat_obj.save()
                             except IntegrityError:  # Avoid duplicated cat
                                 cat_obj = Category.objects.get(name=category)
+                                print("777777777")
 
                             # add() Django method to link manytomany relation
                             product_obj.categories.add(cat_obj)
                             product_obj.save()
-
+                            print("888888888888888")
                 except IntegrityError:
                     continue
                 bar.next()
         self.stdout.write(
             self.style.SUCCESS("DONE")
         )
-
+        print("99999999999999999")
     def clear_db(self):
         """Clears the database"""
 
