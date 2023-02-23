@@ -1,7 +1,8 @@
 import time
 
 import requests
-
+import ssl
+import certifi
 
 class Api:
     """Represents the API used to get data from"""
@@ -40,7 +41,7 @@ class Api:
                     "https://fr.openfoodfacts.org/cgi/search.pl?",
                     params=self.PAYLOAD,
                     headers=self.HEADERS,
-                    verify=False,
+                    context=ssl.create_default_context(cafile=certifi.where()),
                 )
                 break
             except ValueError:
