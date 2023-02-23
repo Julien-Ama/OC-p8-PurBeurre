@@ -1,8 +1,7 @@
 import time
 
 import requests
-import ssl
-ssl._create_default_https_context = ssl._create_unverified_context
+
 
 class Api:
     """Represents the API used to get data from"""
@@ -41,7 +40,6 @@ class Api:
                     "https://fr.openfoodfacts.org/cgi/search.pl?",
                     params=self.PAYLOAD,
                     headers=self.HEADERS,
-
                 )
                 break
             except ValueError:
@@ -51,7 +49,6 @@ class Api:
         if r.status_code == 200:
             # Cast products found to json as a list and assign into variable
             self.products = r.json()["products"]
-            print(self.products) # --------------------------------------------
         else:
             err = f"ERROR : {r.status_code}"
             print(err)
