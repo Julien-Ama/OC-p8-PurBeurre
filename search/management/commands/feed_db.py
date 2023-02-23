@@ -20,7 +20,7 @@ class Command(BaseCommand):
         # Launches import of data from API
         print("Data importation from API")
         myapi = Api()
-        products = myapi.products
+        products = myapi.avoid_empty()
         print(products) # test products -------------------------------------------------
 
         if products is not None:
