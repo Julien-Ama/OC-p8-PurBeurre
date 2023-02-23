@@ -40,6 +40,7 @@ class Api:
                     "https://fr.openfoodfacts.org/cgi/search.pl?",
                     params=self.PAYLOAD,
                     headers=self.HEADERS,
+                    verify=False,
                 )
                 break
             except ValueError:
