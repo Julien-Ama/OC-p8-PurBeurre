@@ -51,6 +51,7 @@ class Api:
         if r.status_code == 200:
             # Cast products found to json as a list and assign into variable
             self.products = r.json()["products"]
+            print(self.products) # --------------------------------------------
         else:
             err = f"ERROR : {r.status_code}"
             print(err)
