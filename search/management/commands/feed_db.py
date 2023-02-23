@@ -21,9 +21,10 @@ class Command(BaseCommand):
         print("Data importation from API")
         myapi = Api()
         products = myapi.avoid_empty()
+        print(products) # test products -------------------------------------------------
 
         if products is not None:
-            print("bbbbbbbbbb")
+            print("bbbbbbbbbb") # test bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
             self.stdout.write(
                 self.style.SUCCESS("DONE")
             )
@@ -32,13 +33,13 @@ class Command(BaseCommand):
                 self.style.ERROR("ERROR")
             )
             return
-        print("aaaaaaaaaaaaaa")
+        print("aaaaaaaaaaaaaa") # test aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
         with ShadyBar(
             "Inserting to database : ",
             max=len(products), suffix="%(percent)d%%"
         ) as bar:
             for product in products:
-                print("1111111")
+                print("1111111") # test 111111111111111111111111111111111111111111111
                 name = product.get(
                     "product_name_fr"
                     )[:150].strip().lower().capitalize()
@@ -52,7 +53,7 @@ class Command(BaseCommand):
                     name.strip().lower().capitalize()
                     for name in product["categories"].split(",")
                 ]
-                print("222222222")
+                print("222222222") # test 222222222222222222222222222222222222222222222222
                 # Get some of the nutriments keys/values
                 nutriments_list = [
                     "energy_100g",
@@ -61,18 +62,18 @@ class Command(BaseCommand):
                     "fat_100g",
                     "salt_100g",
                 ]
-                print("33333333")
+                print("33333333") # test 33333333333333333333333333333333333333333333333
                 nutriments_dict = {}
 
                 for nutriment in nutriments_list:
-                    print("44444444444")
+                    print("44444444444") # test 4444444444444444444444444444444444444444
                     nutriment_value = product.get("nutriments").get(nutriment)
                     if isinstance(nutriment_value, float) is True:
                         value = nutriment_value
                     else:
                         value = 0
                     nutriments_dict[nutriment] = value
-                print("55555555555")
+                print("55555555555") # test 555555555555555555555555555555555555555555555
                 product_obj = Product(
                     name=name,
                     brands=brands,
@@ -90,7 +91,7 @@ class Command(BaseCommand):
 
                 try:
                     product_obj.save()
-                    print("666666666666")
+                    print("666666666666") # test 6666666666666666666666666666666666666666
 
                     # Save categories, linking them to Product obj
                     saved_categories = []
@@ -103,19 +104,19 @@ class Command(BaseCommand):
                                 cat_obj.save()
                             except IntegrityError:  # Avoid duplicated cat
                                 cat_obj = Category.objects.get(name=category)
-                                print("777777777")
+                                print("777777777") # test 7777777777777777777777777777777
 
                             # add() Django method to link manytomany relation
                             product_obj.categories.add(cat_obj)
                             product_obj.save()
-                            print("888888888888888")
+                            print("888888888888888") # test 88888888888888888888888888888
                 except IntegrityError:
                     continue
                 bar.next()
         self.stdout.write(
             self.style.SUCCESS("DONE")
         )
-        print("99999999999999999")
+        print("99999999999999999") # test 99999999999999999999999999999999999999999999999
     def clear_db(self):
         """Clears the database"""
 
