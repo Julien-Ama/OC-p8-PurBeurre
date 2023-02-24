@@ -98,9 +98,6 @@ DATABASES = {
         'PASSWORD': 'fbc9c0628dcf500b3cccd8200f4ed6ab254da8094c306e78b1263f6632cdf7b4',
         'HOST': 'ec2-34-247-72-29.eu-west-1.compute.amazonaws.com',
         'PORT': '5432',
-        'OPTIONS': {
-            'charset': 'utf8mb4'
-        },
     }
 }
 
