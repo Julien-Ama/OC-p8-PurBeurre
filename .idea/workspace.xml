@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c0709fb8-602e-4f8c-98a1-4ed13d61ad28" name="Changes" comment="first commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p8Nutella/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/p8Nutella/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +59,28 @@
       <recent name="C:\Users\cyril\Desktop\p8PurBeurre-main\users\templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_api.TestApi.test_avoid_empty">
+  <component name="RunManager" selected="Python.manage">
+    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="p8PurBeurre-main" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for test_api.TestApi.test_avoid_empty" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="p8PurBeurre-main" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -84,20 +106,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_authentication.SeleniumRegisterTest&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_authentication.SeleniumRegisterTest.test_register" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="p8PurBeurre-main" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/users/functionnal_tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_authentication.SeleniumRegisterTest.test_register&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -131,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.manage" />
         <item itemvalue="Python tests.Python tests for test_api.TestApi.test_avoid_empty" />
         <item itemvalue="Python tests.Python tests for test_models.ModelsTestCase.test_user_not_admin" />
         <item itemvalue="Python tests.Python tests for test_models.ModelsTestCase.test_favorite_str" />
         <item itemvalue="Python tests.Python tests for test_authentication.SeleniumRegisterTest" />
-        <item itemvalue="Python tests.Python tests for test_authentication.SeleniumRegisterTest.test_register" />
       </list>
     </recent_temporary>
   </component>
