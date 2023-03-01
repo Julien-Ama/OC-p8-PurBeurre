@@ -93,10 +93,10 @@ WSGI_APPLICATION = 'p8Nutella.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',  # a changer en postgres
-        'NAME': 'deqhi2nfo6skf1',
-        'USER': 'fltlnkggksuuoq',
-        'PASSWORD': 'fbc9c0628dcf500b3cccd8200f4ed6ab254da8094c306e78b1263f6632cdf7b4',
-        'HOST': 'ec2-34-247-72-29.eu-west-1.compute.amazonaws.com',
+        'NAME': 'd1vtobjha6nd7a',
+        'USER': 'kfpmjzfwkosdtp',
+        'PASSWORD': '74fe5a0b1599af7564a89551f1e9b94d1bf3af45a8a92275b1612951d55b619a',
+        'HOST': 'ec2-54-246-85-162.eu-west-1.compute.amazonaws.com',
         'PORT': '5432',
     }
 }
