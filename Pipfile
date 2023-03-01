@@ -21,7 +21,7 @@ urllib3 = "*"
 gunicorn = "*"
 selenium = "~=4.7.2"
 django-crispy-forms = "*"
-
+psycopg2 = "*"
 progress = "*"
 
 [dev-packages]
