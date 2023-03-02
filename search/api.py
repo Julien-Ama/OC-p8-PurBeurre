@@ -37,7 +37,7 @@ class Api:
             time.sleep(1)
             try:
                 r = requests.get(
-                    "https://fr.openfoodfacts.org/cgi/search.pl?",
+                    "https://fr.openfoodfacts.org",
                     params=self.PAYLOAD,
                     headers=self.HEADERS,
                 )
