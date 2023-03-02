@@ -19,6 +19,8 @@ from django.contrib.auth import views as auth_views
 from users import views as users_views
 from django.views.static import serve
 from p8Nutella import settings
+# from django.conf import settings as setting
+from django.conf.urls.static import static
 # from . import views
 
 
@@ -35,5 +37,8 @@ urlpatterns = [
          (template_name="login.html"), name="login"),
     path("logout/",  auth_views.LogoutView.as_view
          (template_name="logout.html"), name="logout"),
-    path('static/<path:path>/', serve, {'document_root': settings.STATIC_ROOT, }),
+    # path('static/<path:path>/', serve, {'document_root': settings.STATIC_ROOT, }),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
