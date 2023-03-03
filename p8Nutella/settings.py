@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     "search",
     "users",
     "crispy_forms",
-    "bootstrap4"
 ]
 
 MIDDLEWARE = [
