@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     "search",
     "users",
     "crispy_forms",
-    'crispy_bootstrap4',
 ]
 
 MIDDLEWARE = [
@@ -138,7 +137,7 @@ USE_TZ = True
 AUTH_USER_MODEL = "users.User"
 
 CRISPY_TEMPLATE_PACK = "bootstrap4"
-CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
