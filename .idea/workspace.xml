@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0709fb8-602e-4f8c-98a1-4ed13d61ad28" name="Changes" comment="first commit">
-      <change beforePath="$PROJECT_DIR$/p8Nutella/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/p8Nutella/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/search/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +58,8 @@
       <recent name="C:\Users\Amadeus\OneDrive\Bureau\p8PurBeurre-main\tests\users\functionnal_tests" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Amadeus\OneDrive\Bureau\p8PurBeurre-main\templates" />
+      <recent name="C:\Users\Amadeus\OneDrive\Bureau\p8PurBeurre-main\search\templates\search" />
       <recent name="C:\Users\cyril\Desktop\p8PurBeurre-main\users\templates" />
     </key>
   </component>
