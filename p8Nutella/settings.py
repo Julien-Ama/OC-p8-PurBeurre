@@ -136,7 +136,7 @@ USE_TZ = True
 
 AUTH_USER_MODEL = "users.User"
 
-CRISPY_TEMPLATE_PACK = "bootstrap4"
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 
 # Static files (CSS, JavaScript, Images)
@@ -147,7 +147,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'staticfiles'), ]
 
 LOGIN_REDIRECT_URL = "search:home"
-LOGIN_URL = "templates/login"
+LOGIN_URL = "login"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
