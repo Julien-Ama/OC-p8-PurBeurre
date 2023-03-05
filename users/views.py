@@ -31,3 +31,4 @@ def register(request):
 def account(request):
     """Displays the account page when a user is logged in"""
     return render(request, "account.html")
+
