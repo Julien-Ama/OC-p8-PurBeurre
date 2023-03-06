@@ -54,7 +54,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'p8Nutella.urls'
+ROOT_URLCONF = 'p8PurBeurre-main.urls'
 
 TEMPLATES = [
     {
