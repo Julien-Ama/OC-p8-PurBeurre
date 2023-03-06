@@ -1,1 +1,1 @@
-web: gunicorn p8Nutella.wsgi:application
+web: gunicorn p8PurBeurre-main.wsgi:application
