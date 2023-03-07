@@ -1,4 +1,4 @@
-{% extends 'base.html' %} {% block content %} {% load static %}
+{% extends 'base.html' %} {% block content %} {% load static %} {% load crispy_forms_tags %}
 
 <!-- Authentication -->
 <header class="login">
@@ -18,7 +18,7 @@
   <div class="container">
     <form method="POST">
       {% csrf_token %}
-      <fieldset class="form-group"></fieldset>
+      <fieldset class="form-group">{{ form|crispy }}</fieldset>
 
       <button type="submit" class="btn btn-primary">Se connecter</button>
     </form>

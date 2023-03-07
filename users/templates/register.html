@@ -1,4 +1,4 @@
-{% extends 'base.html' %} {% block content %} {% load static %}
+{% extends 'base.html' %} {% block content %} {% load static %} {% load crispy_forms_tags %}
 
 <!-- Registration -->
 <header class="register">
@@ -19,7 +19,7 @@
     <form method="POST">
       {% csrf_token %}
       <!-- protects form, needed to work -->
-      <fieldset class="form-group"></fieldset>
+      <fieldset class="form-group">{{ form|crispy }}</fieldset>
 
       <button type="submit" class="btn btn-primary">S'inscrire</button>
     </form>
