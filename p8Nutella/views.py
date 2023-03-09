@@ -15,5 +15,5 @@ def contact_view(request):
 def articles_view(request):
     return render(request, 'articles.html')
 
-def login_view(request):
-    return render(request, 'login.html')
+# def login_view(request):
+#     return render(request, 'login.html')

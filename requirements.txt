@@ -84,5 +84,6 @@ urllib3
 gunicorn
 selenium~=4.7.2
 django-crispy-forms
+crispy-bootstrap4
 psycopg2
 progress
