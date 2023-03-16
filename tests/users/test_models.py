@@ -28,4 +28,4 @@ class ModelsTestCase(TestCase):
         )
         self.assertIs(user.is_admin, False)
 
-# coverage run --source"." manage.py test
+# coverage run --source "." manage.py test
