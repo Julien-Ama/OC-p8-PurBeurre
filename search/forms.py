@@ -11,7 +11,8 @@ class MainSearchForm(forms.Form):
                 "placeholder": "Entrez un produit",
                 "type": "text",
                 "class": "form-control",
-                "autofocus": "autofocus"
+                "autofocus": "autofocus",
+                "id": "input_autocomplete"
             }
         )
     )

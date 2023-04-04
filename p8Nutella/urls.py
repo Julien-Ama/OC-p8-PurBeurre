@@ -31,7 +31,6 @@ urlpatterns = [
     # Custom views
     path("register/", users_views.register, name="register"),
     path("account", users_views.account, name="account"),
-
     # Django Views
     path("login/",  auth_views.LoginView.as_view
          (template_name="login.html"), name="login"),

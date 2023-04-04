@@ -9,11 +9,14 @@ from .models import Product, Category, Favorite
 from users.models import User
 
 
+
 def home(request):
     """Displays the home page"""
     main_search_form = MainSearchForm()  # instanciate form
+    products = Product.objects.all()
     context = {
         "main_search_form": main_search_form,
+        "products": products[:30]
         # key: variables we access from template
     }
     return render(request, "search/home.html", context)

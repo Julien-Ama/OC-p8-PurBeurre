@@ -86,4 +86,17 @@
     </div>
   </div>
 </section>
+
+<script>
+  $( function() {
+    var availableTags = [
+        {% for product in products %}
+            "{{product.name}}",
+        {% endfor %}
+    ];
+    $( "#input_autocomplete" ).autocomplete({
+      source: availableTags
+    });
+  } );
+</script>
 {% endblock %}
