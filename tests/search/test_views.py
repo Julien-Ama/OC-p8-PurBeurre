@@ -84,3 +84,7 @@ class TestViews(TestCase):
 
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, "search/legal_notice.html")
+
+    # def test_autocomplete(self):
+    #     product_search = {"product_search": "input"}
+

@@ -73,4 +73,5 @@ class Api:
 
                 full_products.append(p)
 
+
         return full_products

@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0709fb8-602e-4f8c-98a1-4ed13d61ad28" name="Changes" comment="Final commit (tests)">
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p8Nutella/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/p8Nutella/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/search/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/search/test_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/search/test_models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/search/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/search/test_views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +70,7 @@
       <recent name="C:\Users\cyril\Desktop\p8PurBeurre-main\users\templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_authentication.SeleniumRegisterTest">
+  <component name="RunManager" selected="Python tests.Python tests for test_models.ModelsTestCase.test_autocomplete">
     <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="p8PurBeurre-main" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -87,20 +92,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_api.TestApi.test_avoid_empty" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="p8PurBeurre-main" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/search" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_api.TestApi.test_avoid_empty&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Python tests for test_authentication.SeleniumRegisterTest" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="p8PurBeurre-main" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -112,6 +103,20 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_authentication.SeleniumRegisterTest&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_models.ModelsTestCase.test_autocomplete" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="p8PurBeurre-main" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/search" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_models.ModelsTestCase.test_autocomplete&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -145,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_models.ModelsTestCase.test_autocomplete" />
         <item itemvalue="Python tests.Python tests for test_authentication.SeleniumRegisterTest" />
         <item itemvalue="Python tests.Python tests for test_views.TestViews" />
         <item itemvalue="Python tests.Python tests for test_views.TestUsersViews" />
         <item itemvalue="Python.manage" />
-        <item itemvalue="Python tests.Python tests for test_api.TestApi.test_avoid_empty" />
       </list>
     </recent_temporary>
   </component>

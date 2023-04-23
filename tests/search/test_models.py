@@ -2,6 +2,9 @@ from django.test import TestCase
 
 from search.models import Product, Category, Favorite
 from users.models import User
+from search.forms import MainSearchForm
+from search.management.commands.feed_db import Command
+from search.api import Api
 
 
 class ModelsTestCase(TestCase):
@@ -56,3 +59,23 @@ class ModelsTestCase(TestCase):
             f"Substitut: {favorite.substitute}, "
             f"User: {favorite.user}",
         )
+
+    # def test_autocomplete(self):
+    #     # mainSearchForm = MainSearchForm.widget_attrs(
+    #     #     input="pr"
+    #     # )
+    #     # self.assertEqual(str(mainSearchForm), "Prince chocolat biscuits")
+    #     myapi = Api()
+    #
+    #     product = myapi.avoid_empty()
+    #     # print(str(product))
+    #     # name = product("product_name_fr")[:150].strip().lower().capitalize()
+    #     for t in product:
+    #         name = t.get("product_name_fr")[:150].strip().lower().capitalize()
+    #     print(name)
+    #     # print(product(name=name))
+    #     # print()
+    #     # mycommand = Command()
+    #     # print(mycommand.handle(name))
+    #     products = Product.objects.all()
+    #     print(products)
