@@ -93,7 +93,7 @@ WSGI_APPLICATION = 'p8Nutella.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',  # a changer en postgres
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'd9fn1jvl5e28l2',
         'USER': 'plhvgwvbvedzac',
         'PASSWORD': '0917d44c85cc0747937f18dffb989660690652a0bad90623454ef2d68a60772b',
