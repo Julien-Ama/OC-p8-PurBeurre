@@ -36,7 +36,7 @@ urlpatterns = [
          (template_name="login.html"), name="login"),
     path("logout/",  auth_views.LogoutView.as_view
          (template_name="logout.html"), name="logout"),
-    path('static/<path:path>/', serve, {'document_root': settings.STATIC_ROOT, }),
+    # path('static/<path:path>/', serve, {'document_root': settings.STATIC_ROOT, }),
 ]
 
 if settings.DEBUG:
