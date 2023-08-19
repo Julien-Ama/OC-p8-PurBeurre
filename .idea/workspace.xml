@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0709fb8-602e-4f8c-98a1-4ed13d61ad28" name="Changes" comment="nouvelle fonctionnalité autocompletion (tests)">
-      <change afterPath="$PROJECT_DIR$/settings/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/p8Nutella/settings.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,11 +59,11 @@
       <recent name="C:\Users\Amadeus\OneDrive\Bureau\p8PurBeurre-main\tests\users\functionnal_tests" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Amadeus\OneDrive\Bureau\p8PurBeurre-main\p8Nutella" />
       <recent name="C:\Users\Amadeus\OneDrive\Bureau\p8PurBeurre-main\tests\users\functionnal_tests" />
       <recent name="C:\Users\Amadeus\OneDrive\Bureau\p8PurBeurre-main\tests\users" />
       <recent name="C:\Users\Amadeus\OneDrive\Bureau\p8PurBeurre-main\templates" />
       <recent name="C:\Users\Amadeus\OneDrive\Bureau\p8PurBeurre-main\search\templates\search" />
-      <recent name="C:\Users\cyril\Desktop\p8PurBeurre-main\users\templates" />
     </key>
   </component>
   <component name="RunManager" selected="Python tests.Python tests for test_models.ModelsTestCase.test_autocomplete">
@@ -245,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686406777952</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="nouvelle fonctionnalité autocompletion (tests)">
+      <created>1692364688862</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1692364688862</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

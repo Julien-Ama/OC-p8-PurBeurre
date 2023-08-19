@@ -1,5 +1,5 @@
 __pycache__/
-p8PurBeurre-main/settings/production.py
+p8PNutella/settings/production.py
 *.py[cod]
 pbenv
 .vscode
