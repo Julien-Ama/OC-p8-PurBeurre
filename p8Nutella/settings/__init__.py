@@ -148,7 +148,7 @@ CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 STATIC_URL = '/staticfiles/'
 # STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-STATIC_ROOT = ""
+STATIC_ROOT = ""  # test
 STATICFILES_DIRS = ['staticfiles']
 
 LOGIN_REDIRECT_URL = "search:home"
