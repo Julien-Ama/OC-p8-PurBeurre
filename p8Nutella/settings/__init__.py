@@ -23,10 +23,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY =\
     'django-insecure-ys__jn_6mf^nxf9bw^=&6)3ub)kx5-$wn^b*x8bzu@lsuws7q%'
 
-# SECURITY WARNING: !don't run with debug turned on in production!
+# SECURITY WARNING: !qdon't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.herokuapp.com',"127.0.0.1"]
+# ALLOWED_HOSTS = ['164.90.217.232']
+ALLOWED_HOSTS = ['127.0.0.1']
 
 # Application definition
 
@@ -146,8 +147,9 @@ CRISPY_TEMPLATE_PACK = "bootstrap4"
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = '/staticfiles/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'staticfiles'), ]
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = ""
+STATICFILES_DIRS = ['staticfiles' ]
 
 LOGIN_REDIRECT_URL = "search:home"
 LOGIN_URL = "login"

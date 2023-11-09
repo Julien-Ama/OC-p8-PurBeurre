@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0709fb8-602e-4f8c-98a1-4ed13d61ad28" name="Changes" comment="nouvelle fonctionnalité autocompletion (tests)">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="c0709fb8-602e-4f8c-98a1-4ed13d61ad28" name="Changes" comment="new settings files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p8Nutella/settings/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/p8Nutella/settings/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,8 +43,8 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/data-analyst" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../p8PurBeurre-main - Copie" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.notifications" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -59,11 +59,11 @@
       <recent name="C:\Users\Amadeus\OneDrive\Bureau\p8PurBeurre-main\tests\users\functionnal_tests" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Amadeus\OneDrive\Bureau\p8PurBeurre-main" />
+      <recent name="C:\Users\Amadeus\OneDrive\Bureau\p8PurBeurre-main\staticfiles\assets\img" />
+      <recent name="C:\Users\Amadeus\OneDrive\Bureau\p8PurBeurre-main\static\assets\img" />
       <recent name="C:\Users\Amadeus\OneDrive\Bureau\p8PurBeurre-main\p8Nutella" />
       <recent name="C:\Users\Amadeus\OneDrive\Bureau\p8PurBeurre-main\tests\users\functionnal_tests" />
-      <recent name="C:\Users\Amadeus\OneDrive\Bureau\p8PurBeurre-main\tests\users" />
-      <recent name="C:\Users\Amadeus\OneDrive\Bureau\p8PurBeurre-main\templates" />
-      <recent name="C:\Users\Amadeus\OneDrive\Bureau\p8PurBeurre-main\search\templates\search" />
     </key>
   </component>
   <component name="RunManager" selected="Python tests.Python tests for test_models.ModelsTestCase.test_autocomplete">
@@ -250,7 +250,21 @@
       <option name="project" value="LOCAL" />
       <updated>1692364688862</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="new settings files">
+      <created>1692465262033</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1692465262034</updated>
+    </task>
+    <task id="LOCAL-00014" summary="new settings files">
+      <created>1692465467302</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1692465467302</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,10 +287,18 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="Final commit (tests)" />
     <MESSAGE value="nouvelle fonctionnalité autocompletion (tests)" />
-    <option name="LAST_COMMIT_MESSAGE" value="nouvelle fonctionnalité autocompletion (tests)" />
+    <MESSAGE value="new settings files" />
+    <option name="LAST_COMMIT_MESSAGE" value="new settings files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/p8Nutella/urls.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
