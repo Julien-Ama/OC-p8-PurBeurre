@@ -26,8 +26,8 @@ SECRET_KEY =\
 # SECURITY WARNING: !qdon't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = ['164.90.217.232']
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['164.90.217.232']
+# ALLOWED_HOSTS = ['127.0.0.1']
 
 # Application definition
 
