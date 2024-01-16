@@ -10,6 +10,7 @@ from django.shortcuts import render, redirect
 
 def register(request):
     """Displays the registration page"""
+    PROUT
     if request.method == "POST":
         form = UserRegisterForm(request.POST)
         if form.is_valid():

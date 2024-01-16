@@ -12,7 +12,21 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 import os
+import sentry_sdk
+from sentry_sdk.integrations.django import DjangoIntegration
 
+sentry_sdk.init(
+    dsn="https://61774948a4b9db625715da5ef597d906@o4505970402918400.ingest.sentry.io/4506383869476864",
+    integrations=[DjangoIntegration()],
+    # Set traces_sample_rate to 1.0 to capture 100%
+    # of transactions for performance monitoring.
+    traces_sample_rate=1.0,
+    # Set profiles_sample_rate to 1.0 to profile 100%
+    # of sampled transactions.
+    # We recommend adjusting this value in production.
+    profiles_sample_rate=1.0,
+    send_default_pii=True
+)
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -26,8 +40,8 @@ SECRET_KEY =\
 # SECURITY WARNING: !qdon't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['164.90.217.232']
-# ALLOWED_HOSTS = ['127.0.0.1']
+# ALLOWED_HOSTS = ['164.90.217.232']
+ALLOWED_HOSTS = ['127.0.0.1']
 
 # Application definition
 
@@ -78,30 +92,30 @@ WSGI_APPLICATION = 'p8Nutella.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',  # a changer en postgres
-#         'NAME': 'projet_8',
-#         'USER': 'root',
-#         'PASSWORD': '',
-#         'HOST': '127.0.0.1',
-#         'PORT': '3306',
-#         'OPTIONS': {
-#             'charset': 'utf8mb4'
-#         },
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd9fn1jvl5e28l2',
-        'USER': 'plhvgwvbvedzac',
-        'PASSWORD': '0917d44c85cc0747937f18dffb989660690652a0bad90623454ef2d68a60772b',
-        'HOST': 'ec2-54-77-120-158.eu-west-1.compute.amazonaws.com',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.mysql',  # a changer en postgres
+        'NAME': 'projet_8',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+        'OPTIONS': {
+            'charset': 'utf8mb4'
+        },
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'd9fn1jvl5e28l2',
+#         'USER': 'plhvgwvbvedzac',
+#         'PASSWORD': '0917d44c85cc0747937f18dffb989660690652a0bad90623454ef2d68a60772b',
+#         'HOST': 'ec2-54-77-120-158.eu-west-1.compute.amazonaws.com',
+#         'PORT': '5432',
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
