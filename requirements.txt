@@ -87,3 +87,4 @@ django-crispy-forms
 crispy-bootstrap4
 psycopg2
 progress
+sentry-sdk
