@@ -14,3 +14,5 @@
 - Lancer le projet : python3 manage.py runserver
 
 [p10 Pbeurre.pdf](https://github.com/user-attachments/files/17210620/p10.Pbeurre.pdf)
+[P11_02_emails.pdf](https://github.com/user-attachments/files/17210644/P11_02_emails.pdf)
+[P11_03_démarche.pdf](https://github.com/user-attachments/files/17210648/P11_03_demarche.pdf)
