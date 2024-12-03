@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0709fb8-602e-4f8c-98a1-4ed13d61ad28" name="Changes" comment="nouvelle fonctionnalité autocompletion (tests)">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="c0709fb8-602e-4f8c-98a1-4ed13d61ad28" name="Changes" comment="new settings files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p8Nutella/settings/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/p8Nutella/settings/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +30,19 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/p8Nutella/settings/__init__.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/p8Nutella/urls.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/templates/base.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/p8Nutella/views.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/static/css/styles.css" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/search/templates/search/substitutes.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/users/forms.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/p8Nutella/settings/.production.py.swp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/p8Nutella/settings/production.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/users/models.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/p8Nutella/asgi.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -43,7 +57,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/data-analyst" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../p8PurBeurre-main - Copie" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -59,11 +73,11 @@
       <recent name="C:\Users\Amadeus\OneDrive\Bureau\p8PurBeurre-main\tests\users\functionnal_tests" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Amadeus\OneDrive\Bureau\p8PurBeurre-main" />
+      <recent name="C:\Users\Amadeus\OneDrive\Bureau\p8PurBeurre-main\staticfiles\assets\img" />
+      <recent name="C:\Users\Amadeus\OneDrive\Bureau\p8PurBeurre-main\static\assets\img" />
       <recent name="C:\Users\Amadeus\OneDrive\Bureau\p8PurBeurre-main\p8Nutella" />
       <recent name="C:\Users\Amadeus\OneDrive\Bureau\p8PurBeurre-main\tests\users\functionnal_tests" />
-      <recent name="C:\Users\Amadeus\OneDrive\Bureau\p8PurBeurre-main\tests\users" />
-      <recent name="C:\Users\Amadeus\OneDrive\Bureau\p8PurBeurre-main\templates" />
-      <recent name="C:\Users\Amadeus\OneDrive\Bureau\p8PurBeurre-main\search\templates\search" />
     </key>
   </component>
   <component name="RunManager" selected="Python tests.Python tests for test_models.ModelsTestCase.test_autocomplete">
@@ -155,6 +169,9 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Amadeus\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="c0709fb8-602e-4f8c-98a1-4ed13d61ad28" name="Changes" comment="" />
@@ -250,7 +267,70 @@
       <option name="project" value="LOCAL" />
       <updated>1692364688862</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="new settings files">
+      <created>1692465262033</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1692465262034</updated>
+    </task>
+    <task id="LOCAL-00014" summary="new settings files">
+      <created>1692465467302</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1692465467302</updated>
+    </task>
+    <task id="LOCAL-00015" summary="new settings files">
+      <created>1699541550882</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1699541550882</updated>
+    </task>
+    <task id="LOCAL-00016" summary="new settings files">
+      <created>1699541699383</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1699541699383</updated>
+    </task>
+    <task id="LOCAL-00017" summary="new settings files">
+      <created>1699542053730</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1699542053730</updated>
+    </task>
+    <task id="LOCAL-00018" summary="new settings files">
+      <created>1699542642557</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1699542642557</updated>
+    </task>
+    <task id="LOCAL-00019" summary="new settings files">
+      <created>1699543226378</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1699543226378</updated>
+    </task>
+    <task id="LOCAL-00020" summary="new settings files">
+      <created>1699544024940</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1699544024940</updated>
+    </task>
+    <task id="LOCAL-00021" summary="new settings files">
+      <created>1699630916625</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1699630916625</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,7 +341,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="staging" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -273,10 +365,18 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="Final commit (tests)" />
     <MESSAGE value="nouvelle fonctionnalité autocompletion (tests)" />
-    <option name="LAST_COMMIT_MESSAGE" value="nouvelle fonctionnalité autocompletion (tests)" />
+    <MESSAGE value="new settings files" />
+    <option name="LAST_COMMIT_MESSAGE" value="new settings files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/p8Nutella/urls.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">

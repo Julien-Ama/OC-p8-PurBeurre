@@ -12,7 +12,21 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 import os
+import sentry_sdk
+from sentry_sdk.integrations.django import DjangoIntegration
 
+sentry_sdk.init(
+    dsn="https://61774948a4b9db625715da5ef597d906@o4505970402918400.ingest.sentry.io/4506383869476864",
+    integrations=[DjangoIntegration()],
+    # Set traces_sample_rate to 1.0 to capture 100%
+    # of transactions for performance monitoring.
+    traces_sample_rate=1.0,
+    # Set profiles_sample_rate to 1.0 to profile 100%
+    # of sampled transactions.
+    # We recommend adjusting this value in production.
+    profiles_sample_rate=1.0,
+    send_default_pii=True
+)
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -23,10 +37,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY =\
     'django-insecure-ys__jn_6mf^nxf9bw^=&6)3ub)kx5-$wn^b*x8bzu@lsuws7q%'
 
-# SECURITY WARNING: !don't run with debug turned on in production!
+# SECURITY WARNING: !qdon't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.herokuapp.com',"127.0.0.1"]
+# ALLOWED_HOSTS = ['164.90.217.232']
+ALLOWED_HOSTS = ['127.0.0.1']
 
 # Application definition
 
@@ -146,8 +161,9 @@ CRISPY_TEMPLATE_PACK = "bootstrap4"
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = '/staticfiles/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'staticfiles'), ]
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = ""  # test
+STATICFILES_DIRS = ['staticfiles']
 
 LOGIN_REDIRECT_URL = "search:home"
 LOGIN_URL = "login"
